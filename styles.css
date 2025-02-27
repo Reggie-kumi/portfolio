@@ -1,4 +1,12 @@
+/* ============================= */
+/*            IMPORTS            */
+/* ============================= */
+
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@400;600&family=Poppins:wght@300;400;500&display=swap');
+
+/* ============================= */
+/*       GLOBAL STYLES           */
+/* ============================= */
 
 * {
     padding: 0;
@@ -7,25 +15,23 @@
     box-sizing: border-box;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
     font-family: "Playfair Display", serif;
 }
 
-button,
-.primary {
+button, .primary {
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
 }
-
-/* Rest of your CSS remains unchanged */
-
 
 a {
     cursor: pointer;
     text-decoration: none;
 }
+
+/* ============================= */
+/*       NAVIGATION BAR          */
+/* ============================= */
 
 nav {
     display: flex;
@@ -72,6 +78,10 @@ nav .logo {
     align-items: center;
 }
 
+/* ============================= */
+/*         HERO SECTION          */
+/* ============================= */
+
 .first-section {
     display: flex;
     padding: 6rem 50px 0 50px;
@@ -81,7 +91,7 @@ nav .logo {
 }
 
 .hello-text {
-    font-size: 8em;
+    font-size: 7em;
     color: #d59776;
 }
 
@@ -116,6 +126,10 @@ nav .logo {
     align-self: flex-end;
 }
 
+/* ============================= */
+/*        ABOUT SECTION          */
+/* ============================= */
+
 .second-section {
     padding: 10rem 6rem;
     background-color: #d59776;
@@ -145,7 +159,10 @@ nav .logo {
     font-family: "Poppins", sans-serif;
 }
 
-/* Services Section */
+/* ============================= */
+/*       SERVICES SECTION        */
+/* ============================= */
+
 .third-section {
     text-align: center;
     padding: 6rem 6vw;
@@ -193,6 +210,10 @@ nav .logo {
     color: #555;
 }
 
+/* ============================= */
+/*        CTA SECTION            */
+/* ============================= */
+
 .fourth-section {
     text-align: center;
     padding: 4rem;
@@ -212,6 +233,10 @@ nav .logo {
     border-radius: 5px;
     margin-top: 1rem;
 }
+
+/* ============================= */
+/*        CONTACT SECTION        */
+/* ============================= */
 
 .fifth-section {
     text-align: center;
@@ -246,7 +271,7 @@ nav .logo {
     margin-top: 1rem;
 }
 
-.fifth-section {
+fifth-section {
     padding: 6rem 10vw;
     background: #f8f8f8;
     text-align: center;
@@ -320,6 +345,9 @@ nav .logo {
     background: #b97a5f;
 }
 
+/* ============================= */
+/*        FOOTER SECTION         */
+/* ============================= */
 
 footer {
     text-align: center;
@@ -343,15 +371,17 @@ footer .fa {
     cursor: pointer;
 }
 
+/* ============================= */
+/*        ANIMATIONS             */
+/* ============================= */
+
 @keyframes cloudyBackground {
     0% {
         background-position: 0% 0%;
     }
-
     50% {
         background-position: 100% 100%;
     }
-
     100% {
         background-position: 0% 0%;
     }
