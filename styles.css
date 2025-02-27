@@ -91,7 +91,7 @@ nav .logo {
 }
 
 .hello-text {
-    font-size: 7em;
+    font-size: 6em;
     color: #d59776;
 }
 
@@ -384,5 +384,228 @@ footer .fa {
     }
     100% {
         background-position: 0% 0%;
+    }
+}
+
+
+/* ============================= */
+/*            ABOUT PAGE         */
+/* ============================= */
+
+.about-header {
+    text-align: center;
+    padding: 5rem 2rem;
+    background: #f9f9f9;
+    color: #333;
+}
+
+.about-header h1 {
+    font-size: 3rem;
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    color: #d59776;
+}
+
+/* ============================= */
+/*        ABOUT SECTION          */
+/* ============================= */
+
+.big-div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6rem 8vw;
+    gap: 3rem;
+    background: #fff;
+    margin-top: 6rem;
+}
+
+/* IMAGE SECTION */
+.image-div {
+    flex: 1;
+    max-width: 40%;
+}
+
+.image-div img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* TEXT CONTENT */
+.image-text {
+    flex: 1;
+    max-width: 55%;
+}
+
+.image-text h1 {
+    font-size: 2.5rem;
+    color: #d59776;
+    margin-bottom: 1.5rem;
+}
+
+.image-text p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* SKILLS & WORK EXPERIENCE */
+.big-div div:not(.image-div, .image-text, .skills-section, .work-experience) {
+    width: 100%;
+    margin-top: 2rem;
+    background: #f8f8f8;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.big-div h2 {
+    font-size: 2rem;
+    color: #d59776;
+    margin-bottom: 1rem;
+}
+
+.big-div ul {
+    list-style: none;
+    padding: 0;
+}
+
+.big-div li {
+    font-size: 1.2rem;
+    color: #333;
+    padding: 5px 0;
+    position: relative;
+    padding-left: 20px;
+}
+
+.competency {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    padding: 4rem 6rem !important;
+    background-color: #d59776 !important;
+    border-radius: 10px !important;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1) !important;
+    background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png") !important;
+}
+
+.skills-section,
+.work-experience {
+    flex: 1;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.skills-section h2,
+.work-experience h2 {
+    font-size: 1.8rem;
+    color: #d59776;
+    margin-bottom: 1rem;
+}
+
+.skills-section ul,
+.work-experience ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-section li,
+.work-experience li {
+    font-size: 1.2rem;
+    color: #555;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    transition: all 0.3s ease-in-out;
+}
+
+.skills-section li:last-child,
+.work-experience li:last-child {
+    border-bottom: none;
+}
+
+.skills-section li:hover,
+.work-experience li:hover {
+    background: #f5ebe4;
+    color: #d59776;
+    transform: translateX(5px);
+}
+
+
+/* ============================= */
+/*          FOOTER SECTION       */
+/* ============================= */
+
+footer {
+    text-align: center;
+    background: #222;
+    color: white;
+    padding: 4rem 2rem;
+}
+
+footer h1 {
+    color: #d59776;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+footer p {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #ddd;
+}
+
+/* Social Icons */
+.social-icons {
+    margin-top: 1.5rem;
+}
+
+.social-icons i {
+    font-size: 1.8rem;
+    color: #d59776;
+    margin: 0 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons i:hover {
+    transform: scale(1.2);
+}
+
+/* ============================= */
+/*         RESPONSIVENESS        */
+/* ============================= */
+
+@media screen and (max-width: 1024px) {
+    .big-div {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .image-div,
+    .image-text {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-header h1 {
+        font-size: 2.5rem;
+    }
+
+    .image-text h1 {
+        font-size: 2rem;
+    }
+
+    .big-div li {
+        font-size: 1rem;
+    }
+
+    .social-icons i {
+        font-size: 1.5rem;
     }
 }
