@@ -4,53 +4,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
+    <title>Regina Kumi-Mensah | About Me</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./styles.css" />
 </head>
 
 <body>
+    <!-- Navigation -->
+    <nav>
+        <a href="/" class="logo">Regina Kumi-Mensah</a>
+        <ul class="list-items">
+            <li><a href="/">Home</a></li>
+            <li><a href="./about-me.html">About</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <a href="./contact.html" class="primary">Hire Me</a>
+        </ul>
+    </nav>
+
     <header>
-        <h1>My projects</h1>
+        <h1>My Projects</h1>
     </header>
 
     <section class="project-section">
-        <h2>Aside my pursuit for professional outlook, i take pleasure also in humanitarian services. <br> focus is to drive innovative think amongst young people.</h2>
+        <h2>
+            Aside from my pursuit of a professional outlook, I also take pleasure in humanitarian services.
+            My focus is to drive innovative thinking amongst young people.
+        </h2>
 
         <div class="bigger-project-div">
-            
+            <!-- Project 1 -->
             <div class="project">
-                <img src="./girl1.jpg" alt="project image">
-                <h2>Zero period poverty</h2>
+                <img src="./images/zp.png" alt="Zero Period Poverty Project">
+                <h2>Zero Period Poverty</h2>
+            </div>
 
+            <!-- Project 2 -->
+            <div class="project">
+                <img src="./images/outreach.png" alt="Outreach to Disaster Project">
+                <h2>Outreach to Disaster Victims</h2>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project">
+                <img src="./images/youth.jpg" alt="Youth Empowerment Project">
+                <h2>Youth Empowerment</h2>
+            </div>
         </div>
+    </section>
 
-        <div class="project">
-            <img src="./outreach.png" alt="project image">
-            <h2>Outreach to disaster</h2>
-
+    <section class="fifth-section">
+        <div class="container">
+            <div class="contact-text">
+                <h1>Ready to Make an Impact?</h1>
+                <p>Let’s collaborate to turn ideas into actionable solutions. Reach out today and let’s build something
+                    extraordinary.</p>
+            </div>
+            <div class="contact-form">
+                <form action="">
+                    <div class="input-group">
+                        <input type="text" id="fname" name="fname" placeholder="First Name" required>
+                        <input type="text" id="lname" name="lname" placeholder="Last Name" required>
+                    </div>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="primary">Send Message</button>
+                </form>
+            </div>
         </div>
-
-        <div class="project">
-            <img src="./girl2.png" alt="project image">
-            <h2>Youth Empowerment</h2>
-
-        </div>
-    
-    </div>
-
     </section>
 
     <footer>
         <h1>kumimensahregina@gmail.com</h1>
-        <p>Ghana,Accra
-            
-        Park blue, rowdio st</p>
-        <p>&#169Regina kumi-Mensah. All rights reserved</p>
-        <p>stay connected  <i class="fa fa-instagram" aria-hidden="true"></i><i class="fa fa-linkedin" aria-hidden="true"></i></p>
+        <p>Accra, Ghana</p>
+        <p>20 Mabey Street, Haatso</p>
+        <p>&copy; Regina Kumi-Mensah. All Rights Reserved.</p>
+        <div class="social-icons">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+        </div>
     </footer>
 
-
-
-
+    <!-- Navbar Scroll Effect -->
+    <script>
+        window.addEventListener('scroll', function () {
+            const navbar = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
 </body>
 
 </html>
