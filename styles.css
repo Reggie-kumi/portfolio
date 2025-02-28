@@ -66,6 +66,12 @@ nav a {
     border-radius: 5px;
     font-weight: bold;
     border: 1px solid #d59776;
+    transition: all 0.3s;
+}
+
+.primary:hover{
+    background: #b97a5f;
+    border-color: #b97a5f;
 }
 
 nav .logo {
@@ -121,6 +127,10 @@ nav .logo {
     color: #d59776;
     font-family: "Poppins", sans-serif;
     font-size: 1em;
+}
+
+.landing-btn:hover{
+    color: #fff;
 }
 
 .first-section img {
@@ -234,6 +244,11 @@ nav .logo {
     cursor: pointer;
     border-radius: 5px;
     margin-top: 1rem;
+}
+
+.fourth-section button:hover{
+    background-color: #d59776;
+    color: #fff;
 }
 
 /* ============================= */
@@ -638,6 +653,7 @@ header h1 {
     padding: 6rem 6vw;
     background-color: #fff;
     background-image: url("https://www.transparenttextures.com/patterns/transparent-square-tiles.png");
+    background-attachment: fixed;
 }
 
 .project-section h2 {
