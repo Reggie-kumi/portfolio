@@ -14,11 +14,14 @@
     box-sizing: border-box;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: "Playfair Display", serif;
 }
 
-button, .primary {
+button,
+.primary {
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
 }
@@ -378,9 +381,11 @@ footer .fa {
     0% {
         background-position: 0% 0%;
     }
+
     50% {
         background-position: 100% 100%;
     }
+
     100% {
         background-position: 0% 0%;
     }
@@ -615,7 +620,7 @@ footer p {
 
 header {
     text-align: center;
-    padding: 4rem 2rem;
+    padding: 8rem 2rem;
     background: #fff;
     color: #333;
     margin-top: 6rem;
@@ -632,7 +637,8 @@ header h1 {
     text-align: center;
     padding: 6rem 6vw;
     background-color: #fff;
-    background-image: url("https://www.transparenttextures.com/patterns/transparent-square-tiles.png");}
+    background-image: url("https://www.transparenttextures.com/patterns/transparent-square-tiles.png");
+}
 
 .project-section h2 {
     font-size: 1.5rem;
@@ -681,6 +687,12 @@ header h1 {
     color: #d59776;
     font-weight: bold;
     font-family: "Playfair Display", serif;
+}
+
+.map {
+    background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
+    background-blend-mode: difference;
+    background-attachment: fixed;
 }
 
 /* ============================= */
