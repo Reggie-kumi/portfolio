@@ -22,6 +22,7 @@
     </nav>
 
     <section class="first-section">
+        <div id="particles-js"></div>
         <div class="landing-left">
             <h1 class="hello-text">Hello,<br>I'm Regina.</h1>
             <p>Innovative strategist and youth leader dedicated to driving impact through service, leadership, and technology.</p>
@@ -31,17 +32,19 @@
             </div>
         </div>
         <img src="/images/Reggie-transparent.png" alt="Portrait of Regina Kumi-Mensah">
-    </section>
+    </section>    
 
     <section class="second-section">
         <div class="second-text">
             <h2>Challenging the Status Quo & Creating Global Impact</h2>
-            <p>Committed to innovation and leadership, I specialize in crafting strategic solutions that drive sustainable change across industries and communities.</p>
+            <p>Committed to innovation and leadership, I specialize in crafting strategic solutions that drive
+                sustainable change across industries and communities.</p>
         </div>
         <div class="second-text">
             <h2>Have a Project in Mind?</h2>
             <p>Let's connect and explore how we can create meaningful impact together.</p>
-            <a href="mailto:kumimensahregina@gmail.com">kumimensahregina@gmail.com <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></a>
+            <a href="mailto:kumimensahregina@gmail.com">kumimensahregina@gmail.com <i class="fa fa-arrow-circle-o-right"
+                    aria-hidden="true"></i></a>
         </div>
     </section>
 
@@ -53,19 +56,19 @@
                 <h2>Web Development</h2>
                 <p>Building high-performance digital solutions that enhance brand presence and user experience.</p>
             </div>
-    
+
             <div class="card">
                 <i class="fa fa-paint-brush fa-4x"></i>
                 <h2>Graphic Design</h2>
                 <p>Transforming ideas into stunning visuals that capture attention and communicate effectively.</p>
             </div>
-    
+
             <div class="card">
                 <i class="fa fa-bullhorn fa-4x"></i>
                 <h2>Digital Marketing</h2>
                 <p>Optimizing online engagement through strategic campaigns that drive measurable growth.</p>
             </div>
-    
+
             <div class="card">
                 <i class="fa fa-briefcase fa-4x"></i>
                 <h2>Administrative Support</h2>
@@ -83,7 +86,8 @@
         <div class="container">
             <div class="contact-text">
                 <h1>Ready to Make an Impact?</h1>
-                <p>Let’s collaborate to turn ideas into actionable solutions. Reach out today and let’s build something extraordinary.</p>
+                <p>Let’s collaborate to turn ideas into actionable solutions. Reach out today and let’s build something
+                    extraordinary.</p>
             </div>
             <div class="contact-form">
                 <form action="">
@@ -98,7 +102,7 @@
             </div>
         </div>
     </section>
-    
+
 
     <footer>
         <h1>kumimensahregina@gmail.com</h1>
@@ -110,6 +114,45 @@
             <i class="fa fa-linkedin" aria-hidden="true"></i>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS("particles-js", {
+            particles: {
+                number: {
+                    value: 50, // Number of snowflakes
+                    density: { enable: true, value_area: 800 }
+                },
+                color: { value: "#d59776" }, // Snow color
+                shape: {
+                    type: "circle"
+                },
+                opacity: {
+                    value: 0.7,
+                    random: true
+                },
+                size: {
+                    value: 8,
+                    random: true
+                },
+                move: {
+                    enable: true,
+                    speed: 1,
+                    direction: "bottom",
+                    straight: false
+                }
+            },
+            interactivity: {
+                detect_on: "canvas",
+                events: {
+                    onhover: { enable: false },
+                    onclick: { enable: false }
+                }
+            },
+            retina_detect: true
+        });
+    </script>
+
 
     <script>
         window.addEventListener('scroll', function () {
